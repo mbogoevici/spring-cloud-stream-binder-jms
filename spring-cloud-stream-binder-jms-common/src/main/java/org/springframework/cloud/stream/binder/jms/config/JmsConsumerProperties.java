@@ -20,8 +20,10 @@ package org.springframework.cloud.stream.binder.jms.config;
  */
 public class JmsConsumerProperties {
 
+	public static final String DEFAULT_DLQ_NAME = "Spring.Cloud.Stream.dlq";
+
 	/** the name of the dead letter queue **/
-	private String dlqName = "Spring.Cloud.Stream.dlq";
+	private String dlqName = DEFAULT_DLQ_NAME;
 
 	public String getDlqName() {
 		return dlqName;
